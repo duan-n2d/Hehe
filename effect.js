@@ -51,9 +51,9 @@ $('document').ready(function(){
 		});
 
 		function msgLoop (i) {
-			$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
+			$("p:nth-child("+i+")").fadeOut('slow').delay(500).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
+			$("p:nth-child("+i+")").fadeIn('slow').delay(3000);
 			if(i==50){
 				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
 					$('.cake').fadeIn('fast');
@@ -71,7 +71,7 @@ $('document').ready(function(){
 		msgLoop(0);
 		$(this).fadeOut('slow').delay(2000).promise().done(function(){
 			$('.bannar').addClass('bannar-come');
-			$(this).fadeOut('slow').delay(4000).promise().done(function(){
+			$(this).fadeOut('slow').delay(8000).promise().done(function(){
 				$('.balloon-border').animate({top:-500},8000);
 				$('#b1,#b4,#b5,#b7').addClass('balloons-rotate-behaviour-one');
 				$('#b2,#b3,#b6').addClass('balloons-rotate-behaviour-two');
@@ -88,9 +88,9 @@ $('document').ready(function(){
 				loopSix();
 				loopSeven();
 				
-				$(this).fadeOut('slow').delay(5000).promise().done(function(){
+				$(this).fadeOut('slow').delay(120000).promise().done(function(){
 					$('.cake').fadeIn('slow');
-					$(this).fadeOut('slow').delay(3000).promise().done(function(){
+					$(this).fadeOut('slow').delay(30000).promise().done(function(){
 						$('.fuego').fadeIn('slow');
 						$(this).fadeOut('slow').promise().done(function(){
 							vw = $(window).width()/2;
@@ -123,35 +123,35 @@ $('document').ready(function(){
 	function loopOne() {
 		var randleft = 1000*Math.random();
 		var randtop = 500*Math.random();
-		$('#b1').animate({left:randleft,bottom:randtop},10000,function(){
+		$('#b1').animate({left:randleft,bottom:randtop},5000,function(){
 			loopOne();
 		});
 	}
 	function loopTwo() {
 		var randleft = 1000*Math.random();
 		var randtop = 500*Math.random();
-		$('#b2').animate({left:randleft,bottom:randtop},10000,function(){
+		$('#b2').animate({left:randleft,bottom:randtop},5000,function(){
 			loopTwo();
 		});
 	}
 	function loopThree() {
 		var randleft = 1000*Math.random();
 		var randtop = 500*Math.random();
-		$('#b3').animate({left:randleft,bottom:randtop},10000,function(){
+		$('#b3').animate({left:randleft,bottom:randtop},5000,function(){
 			loopThree();
 		});
 	}
 	function loopFour() {
 		var randleft = 1000*Math.random();
 		var randtop = 500*Math.random();
-		$('#b4').animate({left:randleft,bottom:randtop},10000,function(){
+		$('#b4').animate({left:randleft,bottom:randtop},5000,function(){
 			loopFour();
 		});
 	}
 	function loopFive() {
 		var randleft = 1000*Math.random();
 		var randtop = 500*Math.random();
-		$('#b5').animate({left:randleft,bottom:randtop},10000,function(){
+		$('#b5').animate({left:randleft,bottom:randtop},5000,function(){
 			loopFive();
 		});
 	}
@@ -159,14 +159,14 @@ $('document').ready(function(){
 	function loopSix() {
 		var randleft = 1000*Math.random();
 		var randtop = 500*Math.random();
-		$('#b6').animate({left:randleft,bottom:randtop},10000,function(){
+		$('#b6').animate({left:randleft,bottom:randtop},5000,function(){
 			loopSix();
 		});
 	}
 	function loopSeven() {
 		var randleft = 1000*Math.random();
 		var randtop = 500*Math.random();
-		$('#b7').animate({left:randleft,bottom:randtop},10000,function(){
+		$('#b7').animate({left:randleft,bottom:randtop},5000,function(){
 			loopSeven();
 		});
 	}
